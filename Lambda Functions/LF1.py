@@ -136,11 +136,11 @@ def validateSlots(location,cuisineType,date,time,numPeople,name,email):
                                        'location',
                                        'We are not supporting services in {}. Please enter neighborhood in Manhattan'.format(location))
     
-    cuisines=['indian','mexican','japaneese','french','cafes','italian']
+    cuisines=['indian','mexican','japanese','french','cafes','italian']
     if cuisineType is not None and cuisineType.lower() not in cuisines:
         return buildValidationMessage(False,
                                        'cuisine',
-                                       'We are not supporting services for {} food. Please enter different cuisine'.format(cuisineType))
+                                       'We are not supporting services for {} food. Please chose among Indian, Mexican, Japanese, French, Cafes, and Italian'.format(cuisineType))
     
     if date is not None:
         if not isValidDate(date):
