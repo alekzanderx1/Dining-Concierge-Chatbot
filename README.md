@@ -35,9 +35,9 @@ This is serverless, microservice-driven web application built and deployed on AW
 	
 	Bot: All set! Can I have your Email Tejas to send my finding on?
 	
-	User: email@email.com
+	User: james@gmail.com
 	
-	Bot: Thank you! I will send some recommendations to the Email: ahmadtaqi789@gmail.com later.
+	Bot: Thank you! I will send some recommendations to the Email: james@gmail.com later.
 	
 	User: Thank you!
 	
@@ -47,9 +47,15 @@ This is serverless, microservice-driven web application built and deployed on AW
 	
 	User gets the following Email:
 	
-	“Hello! Here are my Japanese restaurant suggestions for 2 people, for today at 7 pm: 1.
-	Sushi Nakazawa, located at 23 Commerce St, 2. Jin Ramen, located at 3183 Broadway,
-	3. Nikko, located at 1280 Amsterdam Ave. Enjoy your meal!”
+	“Hello Jammes! Here are my Japanese restaurant suggestions for 2 people, for today at 7 pm: 
+	
+	1. Sushi Nakazawa, located at 23 Commerce St, 
+	
+	2. Jin Ramen, located at 3183 Broadway,
+	
+	3. Nikko, located at 1280 Amsterdam Ave. 
+	
+	Enjoy your meal!”
 
 - AWS Services used:
 
