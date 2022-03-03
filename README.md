@@ -5,26 +5,48 @@ This is serverless, microservice-driven web application built and deployed on AW
 
 - Example interaction:
 
+	Bot: Hi there, I'm your personal Concierge. How can I help?
+	
 	User: Hello
+	
 	Bot: Hi there, how can I help?
+	
 	User: I need some restaurant suggestions.
-	Bot: Great. I can help you with that. What city or city area are you looking to dine in?
-	User: Manhattan
-	Bot: Got it, Manhattan. What cuisine would you like to try?
+	
+	Bot: Hello! May I know your name?
+	
+	User: James
+	
+	Bot: Awesome James! Can I know number of people joining you?
+	
+	User: 2
+	
+	Bot: What type of Cuisine do you wanna try James?
+	
 	User: Japanese
-	Bot: Ok, how many people are in your party?
-	User: Two
+	
 	Bot: A few more to go. What date?
+	
 	User: Today
+	
 	Bot: What time?
-	User: 7 pm, please
-	Bot: Great. Lastly, I need your email so I can send you my findings.
+	
+	User: 7 pm
+	
+	Bot: All set! Can I have your Email Tejas to send my finding on?
+	
 	User: email@email.com
-	Bot: You’re all set. Expect my suggestions shortly! Have a good day.
+	
+	Bot: Thank you! I will send some recommendations to the Email: ahmadtaqi789@gmail.com later.
+	
 	User: Thank you!
+	
 	Bot: You’re welcome.
+	
 	(a few minutes later)
+	
 	User gets the following Email:
+	
 	“Hello! Here are my Japanese restaurant suggestions for 2 people, for today at 7 pm: 1.
 	Sushi Nakazawa, located at 23 Commerce St, 2. Jin Ramen, located at 3183 Broadway,
 	3. Nikko, located at 1280 Amsterdam Ave. Enjoy your meal!”
