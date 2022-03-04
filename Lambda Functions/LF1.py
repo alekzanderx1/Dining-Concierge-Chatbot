@@ -148,7 +148,7 @@ def validateSlots(location,cuisineType,date,time,numPeople,name,email):
         elif datetime.datetime.strptime(date, '%Y-%m-%d').date() < datetime.date.today():
             return buildValidationMessage(False, 'date', 'The day has already passed ;)  Please enter a valid date.')
     if numPeople is not None:
-        if int(numPeople) <=0 or int(numPeople)>=10:
+        if int(numPeople) <=0 or int(numPeople)>10:
             return buildValidationMessage(False,'peopleCount',"We can only accommodate 0-10 people! Please enter again.")
     if time is not None:
         if len(time) != 5:
