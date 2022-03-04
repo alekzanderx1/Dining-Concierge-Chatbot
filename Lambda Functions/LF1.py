@@ -130,7 +130,7 @@ def delegate(session_attributes,slots):
     }
 
 def validateSlots(location,cuisineType,date,time,numPeople,name,email):
-    locs = ['nyc','manhattan']
+    locs = ['nyc','manhattan','new york']
     if location is not None and location.lower() not in locs:
         return buildValidationMessage(False,
                                        'location',
@@ -152,14 +152,17 @@ def validateSlots(location,cuisineType,date,time,numPeople,name,email):
             return buildValidationMessage(False,'peopleCount',"We can only accommodate 0-10 people! Please enter again.")
     if time is not None:
         if len(time) != 5:
-            return buildValidationMessage(False, 'time', "Invalid time!")
+            return buildValidationMessage(False, 'time', "Invalid time! Enter in proper format(eg 02:00 PM)")
+        if datetime.datetime.strptime(date, '%Y-%m-%d').date() == datetime.date.today():
+            if (int(time[0:2])<=(datetime.datetime.now().hour)):
+                return buildValidationMessage(False, 'time', "Invalid time! Enter Time after the present time")
         for i in range(len(time)):
             if i == 2:
                 if time[i] != ":":
-                    return buildValidationMessage(False, 'time', "Invalid time!")
+                    return buildValidationMessage(False, 'time', "Invalid time! Enter in proper format(eg 02:00 PM)")
             else:
                 if not time[i].isalnum():
-                    return buildValidationMessage(False, 'time', "Invalid time!")
+                    return buildValidationMessage(False, 'time', "Invalid time!Enter in proper format(eg 02:00 PM)")
 
         hour, minute = time.split(':')
         hour = parse_int(hour)
